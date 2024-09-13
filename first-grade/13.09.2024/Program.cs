@@ -16,20 +16,20 @@ Console.WriteLine(b); // b = 5 -> b = 4
 
 // Задание 2
 
-//int c = Convert.ToInt32(Console.ReadLine());
-//int d = Convert.ToInt32(Console.ReadLine());
+int c = Convert.ToInt32(Console.ReadLine());
+int d = Convert.ToInt32(Console.ReadLine());
 
-//// Пусть c = 6, d = 3, тогда:
-//int e = ((c + d) + Math.Abs(d - c)) / 2; // ((6+3) + |(3-6)|) / 2 = (9+3) / 2 = 6
-//Console.WriteLine(e);
+// Пусть c = 6, d = 3, тогда:
+int e = ((c + d) + Math.Abs(d - c)) / 2; // ((6+3) + |(3-6)|) / 2 = (9+3) / 2 = 6
+Console.WriteLine(e);
 
 
 // Задание 3
 
-//int p = Convert.ToInt32(Console.ReadLine());
-//int m = Convert.ToInt32(Console.ReadLine());
-//int l = Convert.ToInt32(Console.ReadLine());
-//int n = Convert.ToInt32(Console.ReadLine());
+int p = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
+int l = Convert.ToInt32(Console.ReadLine());
+int n = Convert.ToInt32(Console.ReadLine());
 
-//int result = 2 * n * p + (n * n + n) * l + 2 * n * m; // Общая формула для получения
-//Console.WriteLine(result);
+int result = 2 * n * p + (n * n + n) * l + 2 * n * m; // Общая формула для получения
+Console.WriteLine(result);
