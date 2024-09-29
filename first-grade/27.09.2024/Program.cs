@@ -18,7 +18,7 @@
 // 			tempCenter = m;
 // 			break;
 // 		default:
-// 			if (tempLeft < tempCenter && tempCenter > m)
+// 			if (tempLeft > tempCenter && tempCenter < m)
 // 			{
 // 				localMinsCounter++;
 // 			}
