@@ -15,14 +15,30 @@ while(!isOver)
 	if (n == 0)
 	{
 		isOver = true;
+		if (reversedN == 0)
+		{
+			Console.WriteLine("Вы ввели чётное число");
+			break;
+		}
+		if (reversedN == n)
+		{
+			Console.WriteLine("Вы ввели такое же число");
+			reversedN = 0;
+			break;
+		}
 		break;
 	}
 
-	nowN = n % 10;
-	n = n / 10;
+
+	nowN = n % 10; // <- забираешь последнее число
+	n = n / 10; // <- удаляешь последнее число 
+
 	if (nowN % 2 != 0)
 	{
 		reversedN = reversedN * 10 + nowN;
 	}
 }
-Console.WriteLine(reversedN);
+
+if (reversedN != 0) {
+	Console.WriteLine(reversedN);
+}
