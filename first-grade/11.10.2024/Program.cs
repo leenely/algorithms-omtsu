@@ -17,7 +17,7 @@ while(!isOver)
 		isOver = true;
 		if (reversedN == 0)
 		{
-			Console.WriteLine("Вы ввели чётное число");
+			Console.WriteLine("Вы ввели недопустимое число");
 			break;
 		}
 		if (reversedN == n)
