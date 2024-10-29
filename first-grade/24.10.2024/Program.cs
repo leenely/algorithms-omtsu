@@ -11,7 +11,6 @@ int[] ArrayCreation(int n) {
 
 	return arr;
 }
-
 int[] ArrayTransforming(int[] arr) {
 	for (int i = 0; i < arr.Length; i++) {
 		arr[i] = (int)Math.Pow(arr[i], 2);
