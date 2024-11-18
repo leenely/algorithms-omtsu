@@ -1,21 +1,21 @@
 function countCombinations(MaxN: number): number {
 	let count = 0;
-	let Z = 1;
+	let z = 1;
 	while (true) {
-		const power = 2 ** Z; // 2^Z
-		const denominator = power - 1; // 2^Z - 1
+		const power = 2 ** z; // 2^z
+		const denominator = power - 1; // 2^z - 1
 
-		if (denominator > MaxN) {
+		if (denominator > maxN) {
 			break;
 		}
-		
-		const max_N_for_K = Math.floor(MaxN / denominator);
-		count += Math.max(0, max_N_for_K);
-		Z++;
+
+		const maxNForK = Math.floor(MaxN / denominator);
+		count += Math.max(0, maxNForK);
+		z++;
 	}
 
 	return count;
 }
 
-const MaxN = parseInt(prompt('Введите MaxN:') || '0', 10);
-console.log(countCombinations(MaxN));
+const maxN = parseInt(prompt('Введите maxN:') || '0', 10);
+console.log(countCombinations(maxN));
