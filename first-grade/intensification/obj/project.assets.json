@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/alchemy.csproj",
-      "projectName": "alchemy",
-      "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/alchemy.csproj",
+      "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/intensification/intensification.csproj",
+      "projectName": "intensification",
+      "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/intensification/intensification.csproj",
       "packagesPath": "/home/leenely/.nuget/packages/",
-      "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/",
+      "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/leenely/.nuget/NuGet/NuGet.Config"
