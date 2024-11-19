@@ -36,32 +36,34 @@
 // Задача 2
 // int n = int.Parse(Console.ReadLine());
 // int minLength = 100000000,
-// 		currLength = 0;
+//     currLength = 0;
 
-// for (int i = 0; i < n; i++) 
+// for (int i = 0; i < n; i++)
 // {
-// 	int m = int.Parse(Console.ReadLine());
+//     int m = int.Parse(Console.ReadLine());
 
-// 	if (m % 2 == 0)
-// 	{
-// 		currLength += 1;
-// 	}
-// 	else
-// 	{
-// 		if (currLength > 0 && currLength < minLength)
-// 		{
-// 			minLength = currLength;
-// 		}
-// 		currLength = 0;
-// 	}
+//     if (m % 2 == 0)
+//     {
+//         currLength += 1;
+//     }
+//     else
+//     {
+//         if (currLength > 0)
+//         {
+//             minLength = Math.Min(minLength, currLength);
+//         }
+//         currLength = 0;
+//     }
 // }
 
 // if (currLength > 0)
 // {
-// 	minLength = Math.Min(minLength, currLength);
+//     minLength = Math.Min(minLength, currLength);
 // }
 
-// Console.WriteLine(minLength);
+// int result = minLength == 100000000 ? 0 : minLength;
+
+// Console.WriteLine(result);
 
 
 

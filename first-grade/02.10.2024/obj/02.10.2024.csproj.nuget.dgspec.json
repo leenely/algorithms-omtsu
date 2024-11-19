@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\02.10.2024\\02.10.2024.csproj": {}
+    "/home/leenely/code/algorithms-omtsu/first-grade/02.10.2024/02.10.2024.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\02.10.2024\\02.10.2024.csproj": {
+    "/home/leenely/code/algorithms-omtsu/first-grade/02.10.2024/02.10.2024.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\02.10.2024\\02.10.2024.csproj",
+        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/02.10.2024/02.10.2024.csproj",
         "projectName": "02.10.2024",
-        "projectPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\02.10.2024\\02.10.2024.csproj",
-        "packagesPath": "C:\\Users\\leenely\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\02.10.2024\\obj\\",
+        "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/02.10.2024/02.10.2024.csproj",
+        "packagesPath": "/home/leenely/.nuget/packages/",
+        "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/02.10.2024/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leenely\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/leenely/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -58,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
