@@ -1,45 +1,39 @@
-﻿using System;
-
-class Program
+while (true)
 {
-    static void Main()
+    int i = int.Parse(Console.ReadLine());
+    bool isComplete = false;
+    int reversedNumber = 0;
+
+    if (i <= 0)
     {
-        Console.Write("Введите последовательность чисел через пробел: ");
-        string input = Console.ReadLine();
-        string[] numbers = input.Split(' ');
+        Console.WriteLine("Вы ввели неверное число");
+        isComplete = true;
+    }
 
-        int i = 0;
-        while (i < numbers.Length)
+    while (!isComplete)
+    {
+        if (i == 0)
         {
-            int number = int.Parse(numbers[i]);
-
-            if (number <= 0)
+            isComplete = true;
+            if (reversedNumber == 0)
             {
-                Console.WriteLine("Программа завершена. Введено недопустимое число.");
-                return;
+                Console.WriteLine("Вы ввели неверное число");
+                break;
             }
-
-            string reversed = new string(numbers[i].ToCharArray().Reverse().ToArray());
-
-            if (reversed == numbers[i])
-            {
-                Console.WriteLine("Вы ввели такое же число.");
-            }
-            else
-            {
-                int reversedNumber = int.Parse(reversed);
-
-                if (reversedNumber % 2 == 0)
-                {
-                    Console.WriteLine("Не было чётных элементов.");
-                }
-                else
-                {
-                    Console.WriteLine(reversed);
-                }
-            }
-
-            i++;
+            break;
         }
+
+        int dig = i % 10;
+        i /= 10;
+
+        if (dig % 2 != 0)
+        {
+            reversedNumber = reversedNumber * 10 + dig;
+        }
+    }
+
+    if (reversedNumber != 0)
+    {
+        Console.WriteLine(reversedNumber);
     }
 }
