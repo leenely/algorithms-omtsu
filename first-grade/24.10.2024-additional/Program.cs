@@ -4,14 +4,15 @@ int factoryIndex = 0;
 
 for(int i = 0; i < n; i++)
 {
-	float x1 = float.Parse(Console.ReadLine());
-	float y1 = float.Parse(Console.ReadLine());
-	float z1 = float.Parse(Console.ReadLine());
-	float x2 = float.Parse(Console.ReadLine());
-	float y2 = float.Parse(Console.ReadLine());
-	float z2 = float.Parse(Console.ReadLine());
-	float c1 = float.Parse(Console.ReadLine());
-	float c2 = float.Parse(Console.ReadLine());
+	string[] inputs = Console.ReadLine().Split(' ');
+  float x1 = float.Parse(inputs[0]);
+  float y1 = float.Parse(inputs[1]);
+  float z1 = float.Parse(inputs[2]);
+  float x2 = float.Parse(inputs[3]);
+  float y2 = float.Parse(inputs[4]);
+  float z2 = float.Parse(inputs[5]);
+  float c1 = float.Parse(inputs[6]);
+  float c2 = float.Parse(inputs[7]);
 
 	float v1 = x1 * y1 * z1;
 	float v2 = x2 * y2 * z2;
@@ -29,4 +30,4 @@ for(int i = 0; i < n; i++)
 
 }
 
-Console.WriteLine($"{Math.Round(minMilkPpL, 2)}, {factoryIndex}");
+Console.WriteLine($"{factoryIndex}, {Math.Round(minMilkPpL, 2)}");
