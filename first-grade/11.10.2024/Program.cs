@@ -1,43 +1,45 @@
-﻿int n = int.Parse(Console.ReadLine());
-bool isOver = false;
+﻿using System;
 
-int reversedN = 0,
-	nowN = 0;
-
-if (n <= 0)
+class Program
 {
-	Console.WriteLine("Вы ввели отрицательное / нулевое число");
-	isOver = true;
-}
+    static void Main()
+    {
+        Console.Write("Введите последовательность чисел через пробел: ");
+        string input = Console.ReadLine();
+        string[] numbers = input.Split(' ');
 
-while(!isOver)
-{
-	if (n == 0)
-	{
-		isOver = true;
-		if (reversedN == 0)
-		{
-			Console.WriteLine("Вы ввели недопустимое число");
-			break;
-		}
-		if (reversedN == n)
-		{
-			Console.WriteLine("Вы ввели такое же число");
-			reversedN = 0;
-			break;
-		}
-		break;
-	}
+        int i = 0;
+        while (i < numbers.Length)
+        {
+            int number = int.Parse(numbers[i]);
 
-	nowN = n % 10;
-	n = n / 10;
+            if (number <= 0)
+            {
+                Console.WriteLine("Программа завершена. Введено недопустимое число.");
+                return;
+            }
 
-	if (nowN % 2 != 0)
-	{
-		reversedN = reversedN * 10 + nowN;
-	}
-}
+            string reversed = new string(numbers[i].ToCharArray().Reverse().ToArray());
 
-if (reversedN != 0) {
-	Console.WriteLine(reversedN);
+            if (reversed == numbers[i])
+            {
+                Console.WriteLine("Вы ввели такое же число.");
+            }
+            else
+            {
+                int reversedNumber = int.Parse(reversed);
+
+                if (reversedNumber % 2 == 0)
+                {
+                    Console.WriteLine("Не было чётных элементов.");
+                }
+                else
+                {
+                    Console.WriteLine(reversed);
+                }
+            }
+
+            i++;
+        }
+    }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/11.10.2024/11.10.2024.csproj",
-      "projectName": "11.10.2024",
-      "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/11.10.2024/11.10.2024.csproj",
+      "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/08.11.2024.csproj",
+      "projectName": "08.11.2024",
+      "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/08.11.2024.csproj",
       "packagesPath": "/home/leenely/.nuget/packages/",
-      "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/11.10.2024/obj/",
+      "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/leenely/.nuget/NuGet/NuGet.Config"

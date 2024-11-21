@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/24.10.2024-additional.csproj": {}
+    "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/08.11.2024.csproj": {}
   },
   "projects": {
-    "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/24.10.2024-additional.csproj": {
+    "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/08.11.2024.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/24.10.2024-additional.csproj",
-        "projectName": "24.10.2024-additional",
-        "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/24.10.2024-additional.csproj",
+        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/08.11.2024.csproj",
+        "projectName": "08.11.2024",
+        "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/08.11.2024.csproj",
         "packagesPath": "/home/leenely/.nuget/packages/",
-        "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/obj/",
+        "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/08.11.2024/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leenely/.nuget/NuGet/NuGet.Config"
