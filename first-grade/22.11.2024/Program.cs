@@ -1,33 +1,34 @@
 ﻿// Общий код
-void ArrayOutput(int[][] arr)
-{
-	Console.WriteLine("--- Получившийся массив ---");
-	foreach (int[] row in arr) {
-		foreach (int element in row) {
-			Console.Write($"{element} ");
-		}
-		Console.WriteLine();
-	}
-}
+
+// void ArrayOutput(int[][] arr)
+// {
+// 	Console.WriteLine("--- Получившийся массив ---");
+// 	for (int i = 0; i < arr.Length; i++) {
+// 		for (int j = 0; j < arr[i].Length; j++) {
+// 			Console.Write($"{arr[i][j]} ");
+// 		}
+// 		Console.WriteLine();
+// 	}
+// }
 
 int[][] ArrayGenerator(int n, int[][] array)
 {
 	int[][] resultArray = new int[n][];
 
 	for (int i = 0; i < n; i++) {
-		Console.WriteLine($"--- Введите количество элементов строки {i + 1}");
+		Console.WriteLine($"- Введите количество элементов строки {i + 1} -");
 		int m = int.Parse(Console.ReadLine());
 
 		resultArray[i] = new int[m];
 
-		Console.WriteLine($"--- Введите элементы строки {i + 1} через пробел");
+		Console.WriteLine($"- Введите элементы строки {i + 1} через пробел -");
 		string[] elements = Console.ReadLine().Split(' ');
 		for (int j = 0; j < m; j++) {
 			resultArray[i][j] = int.Parse(elements[j]);
 		}
 	}
 
-	ArrayOutput(resultArray);
+	// ArrayOutput(resultArray);
 	return resultArray;
 }
 
@@ -40,71 +41,98 @@ int[][] generatedArray = ArrayGenerator(n, new int[n][]);
 
 // Задание 1
 
-// Определить номера строк массива, в котором имеется элемент, значение которого больше суммы всех остальных элементов строки.
-
-// for (int i = 0; i < n; i++)
-// {
-// 	bool flag = false;
-// 	for (int j = 0; j < generatedArray[i].Length; j++)
-// 	{
+for (int i = 0; i < n; i++)
+{
+	bool flag = false;
+	for (int j = 0; j < generatedArray[i].Length; j++)
+	{
 		
-// 		int tempAllSum = generatedArray[i].Sum();
-// 		for (int k = 0; k < generatedArray[i].Length; k++)
-// 		{
-// 			int curr = generatedArray[i][k];
-// 			if (curr > tempAllSum - curr)
-// 			{
-// 				flag = true;
-// 			}
-// 		}
-// 	}
-// 	if (flag) 
-// 	{ 
-// 		Console.WriteLine($"Элемент, значение которого больше суммы всех остальных элементов замечен в {i + 1} строке");
-// 	}
-// }
+		int tempAllSum = generatedArray[i].Sum();
+		for (int k = 0; k < generatedArray[i].Length; k++)
+		{
+			int curr = generatedArray[i][k];
+			if (curr > tempAllSum - curr)
+			{
+				flag = true;
+			}
+		}
+	}
+	if (flag) 
+	{ 
+		Console.WriteLine($"- Элемент, значение которого больше суммы всех остальных элементов замечен в {i + 1} строке");
+	}
+}
 
 
 // Задание 2
 
-// Необходимо определить для каждой строки наименьшую длину подпоследовательности, состоящую из равномерно убывающих элементов. (подпоследовательность начинается с двойки)
+bool isMinCounterUsed = false;
 
-for (int i = 0; i < n; i++)
+int CheckMinCounter(int minCounter, int counter, bool flag)
 {
-	int count = 0;
-	int difference = -1000000000;
-	int maxCount = -1000000000;
-
-	for (int j = 1; j < generatedArray[i].Length; j++)
+	if (!flag)
 	{
-		Console.WriteLine($"--- {generatedArray[i].Length} ---");
-		if (generatedArray[i].Length < 2) {
-			Console.WriteLine("Я тут был");
-			maxCount = 0;
-			break;
+		minCounter = counter;
+		isMinCounterUsed = true;
+	}
+
+	if (counter < minCounter && counter != 0)
+	{
+		minCounter = counter;
+	}
+
+	return minCounter;
+}
+
+
+int FindMinDecreasingSubsequence(int[] arr)
+{
+	if (arr.Length < 2)
+	{
+		return 0;
+	}
+
+	int difference = -1000000; // Берём такой флаг для первой итерации
+	int counter = 2;
+	int minCounter = 0;
+
+	for (int i = 1; i < arr.Length; i++)
+	{
+		int tempDifference = arr[i] - arr[i - 1];
+
+		if (difference == -1000000)
+		{
+			difference = tempDifference;
+			continue;
 		}
 
-		if (generatedArray[i][j] - generatedArray[i][j - 1] != 0) {
-			if (difference == -1000000000)
-			{
-			difference = generatedArray[i][j] - generatedArray[i][j - 1];
-			count++;
-			if (count > maxCount)
-			{
-				maxCount = count;
-			}
-			} else if (generatedArray[i][j] - generatedArray[i][j - 1] == difference)
-			{
-					count++;
-					if (count > maxCount)
-					{
-						maxCount = count;
-					}
-			} else
-			{
-				count = 0;
-			}
+		if (arr[i] - arr[i - 1] > 0)
+		{
+			difference = tempDifference;
+			minCounter = CheckMinCounter(minCounter, counter, isMinCounterUsed);
+			counter = 0;
+			continue;
+		}
+
+		if (tempDifference == difference)
+		{
+			counter++;
+		}
+		else
+		{
+			difference = tempDifference;
+			minCounter = CheckMinCounter(minCounter, counter, isMinCounterUsed);
+			counter = 2;
 		}
 	}
-	Console.WriteLine(maxCount);
+
+	minCounter = CheckMinCounter(minCounter, counter, isMinCounterUsed);
+	isMinCounterUsed = false;
+	return minCounter;
+}
+
+for (int i = 0; i < generatedArray.Length; i++)
+{
+	Console.WriteLine($"--- Наименьшие длины равномерно убывающих подпоследовательностей для каждой строки ---");
+	Console.WriteLine(FindMinDecreasingSubsequence(generatedArray[i]));
 }
