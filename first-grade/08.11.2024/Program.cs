@@ -113,7 +113,7 @@ int[][] SwapColumnsWithMaxMinElement(int[][] array)
     {
         for (int j = 0; j < m; j++)
         {
-            Console.WriteLine(array[i][j]);
+            // Console.WriteLine(array[i][j]);
 
 						if (array[i][j] > maxElement)
 						{
@@ -129,7 +129,7 @@ int[][] SwapColumnsWithMaxMinElement(int[][] array)
 						
         }
     }
-		Console.WriteLine($"Min: {minColumnIndex}, Max: {maxElement}");
+		// Console.WriteLine($"Min: {minColumnIndex}, Max: {maxElement}");
 
     int[][] swappedArray = new int[array.Length][];
     for (int i = 0; i < array.Length; i++)
