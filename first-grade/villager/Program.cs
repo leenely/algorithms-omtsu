@@ -1,23 +1,17 @@
 ﻿int CountCombinations(int maxN)
 {
     int count = 0;
-    int z = 1;
 
-    while (true)
+    for (int z = 1; ; z++)
     {
-        long power = (long)Math.Pow(2, z);
-        long denominator = power - 1;
+        long pow = (long)Math.Pow(2, z);
+        long div = pow - 1;
 
-        if (denominator > maxN)
-        {
-            break;
-        }
+        if (div > maxN) break; 
 
-        long maxNForK = maxN / (int)denominator;
+        long maxNForK = maxN / div;
 
         count += (int)Math.Max(0, maxNForK);
-
-        z++;
     }
 
     return count;
