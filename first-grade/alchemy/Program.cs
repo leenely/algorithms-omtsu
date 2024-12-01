@@ -1,13 +1,4 @@
-﻿string line = @"DUST UHQNzrGlBWgOJFjQNHKI ofVKEv PC iUBgztjcYSJp oylCamnzcELA
-MIX tQdKuleBLALFdHMa Skvm
-FIRE ony c cXiHjGaVBrPs bnTtkVomsAaJlJL
-DUST GRIQFxhbxIBqqQJHeHR VqjttwRETOwwflOhopN VsqSpaKs YonVaZX aEQSgqApq B qIIWsHzEXLGfGfA
-WATER jXpTYlQEezkK HiM dFdTPhr 2 nv MBLRshRIMajAnw nt YHMMEa Ev
-WATER 3 t eZzJo MzWSYxpLHdIQ
-WATER eLHgEEeR UekRjVD xgsySJxovuCfvVVhBb W v 1 GoaTfvX XhQiKiE ZuwUkBfDqLzjrcKpY dMuEXYmCDwHuIgd
-DUST Thj ispDFgNvR nzenfPXTLUrEXc 6 stBPuNQbYTCgYRc gEjGoqQEKLdE
-FIRE vNCXvSoTf 6
-MIX 4 5 7 8 9";
+﻿string line = @" "; // <- Строка, с которой необходимо работать
 
 List<string> operations = new List<string>();
 
@@ -18,17 +9,17 @@ string Wrapper(string resString, int numberOperation)
 
 string[] lineArrayForm = line.Split('\n');
 
-foreach (string currentLine in lineArrayForm)
+for (int i = 0; i < lineArrayForm.Length; i++)
 {
-    string[] parts = currentLine.Split(' '); 
+    string[] parts = lineArrayForm[i].Split(' ');
 
     List<string> cleanedParts = new List<string>();
 
-    foreach (var part in parts) // Элемент может быть либо типа string, либо типа number
+    for (int k = 0; k < parts.Length; k++)
     {
-        if (!string.IsNullOrWhiteSpace(part))
+        if (!string.IsNullOrWhiteSpace(parts[k]))
         {
-            cleanedParts.Add(part);
+            cleanedParts.Add(parts[k]);
         }
     }
 
@@ -51,7 +42,6 @@ foreach (string currentLine in lineArrayForm)
 
     resString += endCode;
     operations.Add(resString);
-
-    
 }
+
 Console.WriteLine(operations[operations.Count - 1]);

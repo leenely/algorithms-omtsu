@@ -1,0 +1,15 @@
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/bin/Debug/net8.0/alchemy
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/bin/Debug/net8.0/alchemy.deps.json
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/bin/Debug/net8.0/alchemy.runtimeconfig.json
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/bin/Debug/net8.0/alchemy.dll
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/bin/Debug/net8.0/alchemy.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.AssemblyInfoInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.AssemblyInfo.cs
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.csproj.CoreCompileInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.sourcelink.json
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.dll
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/refint/alchemy.dll
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/alchemy.genruntimeconfig.cache
+/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/Debug/net8.0/ref/alchemy.dll
