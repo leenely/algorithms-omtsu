@@ -6,7 +6,7 @@
     {
         long pow = (long)Math.Pow(2, z);
         long div = pow - 1;
-
+        
         if (div > maxN) break; 
 
         long maxNForK = maxN / div;

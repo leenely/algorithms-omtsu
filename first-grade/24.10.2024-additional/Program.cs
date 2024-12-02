@@ -27,7 +27,6 @@ for(int i = 0; i < n; i++)
 		minMilkPpL = milkPpL;
 		factoryIndex = i + 1;
 	}
-
 }
 
 Console.WriteLine($"{factoryIndex}, {Math.Round(minMilkPpL, 2)}");

@@ -1,6 +1,6 @@
-﻿string startDate = "01.01.1901";
-string endDate = "09.04.2065";
-int P = 5000;
+﻿string startDate = Console.ReadLine();
+string endDate = Console.ReadLine();
+int P = int.Parse(Console.ReadLine());
 int resultP = 0;
 
 bool isLeap(int year)

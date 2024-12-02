@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("intensification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aa053d61ad20679f2389cc8c896ffd1dc19e11a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81c0fef3dd1882c9b5ae62adf30486ce80164ef9")]
 [assembly: System.Reflection.AssemblyProductAttribute("intensification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("intensification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
