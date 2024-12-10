@@ -1,0 +1,15 @@
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.AssemblyInfoInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.AssemblyInfo.cs
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.csproj.CoreCompileInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.sourcelink.json
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/bin/Debug/net8.0/intensification
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/bin/Debug/net8.0/intensification.deps.json
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/bin/Debug/net8.0/intensification.runtimeconfig.json
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/bin/Debug/net8.0/intensification.dll
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/bin/Debug/net8.0/intensification.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.dll
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/refint/intensification.dll
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/intensification.genruntimeconfig.cache
+/home/leenely/code/algorithms-omtsu/first-grade/intensification/obj/Debug/net8.0/ref/intensification.dll

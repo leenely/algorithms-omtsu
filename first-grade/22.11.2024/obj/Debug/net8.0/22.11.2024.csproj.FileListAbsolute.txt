@@ -1,0 +1,15 @@
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/bin/Debug/net8.0/22.11.2024
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/bin/Debug/net8.0/22.11.2024.deps.json
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/bin/Debug/net8.0/22.11.2024.runtimeconfig.json
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/bin/Debug/net8.0/22.11.2024.dll
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/bin/Debug/net8.0/22.11.2024.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.AssemblyInfoInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.AssemblyInfo.cs
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.csproj.CoreCompileInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.sourcelink.json
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.dll
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/refint/22.11.2024.dll
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/22.11.2024.genruntimeconfig.cache
+/home/leenely/code/algorithms-omtsu/first-grade/22.11.2024/obj/Debug/net8.0/ref/22.11.2024.dll
