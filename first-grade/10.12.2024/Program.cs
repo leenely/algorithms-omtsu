@@ -65,13 +65,13 @@ namespace CarTask
                             else
                             {
                                 Console.WriteLine("Введены некорректные данные. Нажмите любую клавишу для возврата в главное меню...");
-                                Console.ReadKey();
+                                Console.Read();
                             }
                         }
                         else
                         {
                             Console.WriteLine("Все автомобили уже добавлены. Нажмите любую клавишу для возврата в главное меню...");
-                            Console.ReadKey();
+                            Console.Read();
                         }
                         break;
                     case "2":
@@ -93,7 +93,7 @@ namespace CarTask
             if (carsArray == null || carsArray.Length == 0 || carsArray[0] == null)
             {
                 Console.WriteLine("Список машин пуст. Для того, чтобы вернуться обратно нажмите любую клавишу...");
-                Console.ReadKey();
+                Console.Read();
                 return;
             }
 
