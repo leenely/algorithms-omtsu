@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/leenely/.nuget/packages/": {}
+    "C:\\Users\\leenely\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/24.10.2024-additional.csproj",
+      "projectUniqueName": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\24.10.2024-additional\\24.10.2024-additional.csproj",
       "projectName": "24.10.2024-additional",
-      "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/24.10.2024-additional.csproj",
-      "packagesPath": "/home/leenely/.nuget/packages/",
-      "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/24.10.2024-additional/obj/",
+      "projectPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\24.10.2024-additional\\24.10.2024-additional.csproj",
+      "packagesPath": "C:\\Users\\leenely\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\24.10.2024-additional\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/leenely/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\leenely\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -59,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
