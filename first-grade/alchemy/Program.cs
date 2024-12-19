@@ -11,18 +11,17 @@ foreach(string currLine in lineArrayForm)
     string endCode = type == "DUST" ? "TD" : type == "WATER" ? "TW" : type == "FIRE" ? "RF" : "XM";
     string resString = code;
 
-
 	for (int j = 1; j < currentLine.Length; j++)
     {
-    if (int.TryParse(currentLine[j], out int number) && number - 1 >= 0 && number - 1 < operations.Count)
-    {
-        resString += operations[number - 1].Trim();
+        if (int.TryParse(currentLine[j], out int number) && number - 1 >= 0 && number - 1 < operations.Count)
+        {
+            resString += operations[number - 1].Trim();
+        }
+        else
+        {
+            resString += currentLine[j].Trim();
+        }
     }
-    else
-    {
-        resString += currentLine[j].Trim();
-    }
-}
 
     resString += endCode;
     operations.Add(resString);
