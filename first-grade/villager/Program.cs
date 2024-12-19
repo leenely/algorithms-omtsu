@@ -1,22 +1,20 @@
-﻿int CountCombinations(int maxN)
+﻿long maxN = long.Parse(Console.ReadLine());
+long count = 0;
+
+for (int z = 1; ; z++)
 {
-    int count = 0;
+    long pow = (long)Math.Pow(2, z);
+    long div = pow - 1;
 
-    for (int z = 1; ; z++)
+    if (div <= maxN)
     {
-        long pow = (long)Math.Pow(2, z);
-        long div = pow - 1;
-        
-        if (div > maxN) break; 
-
-        long maxNForK = maxN / div;
-
-        count += (int)Math.Max(0, maxNForK);
+        long temp = maxN / div;
+        count += temp; 
     }
-
-    return count;
+    else
+    {
+        break;
+    }
 }
 
-int maxN = int.Parse(Console.ReadLine());
-int result = CountCombinations(maxN);
-Console.WriteLine(result);
+Console.WriteLine(count);
