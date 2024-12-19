@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/alchemy.csproj": {}
+    "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\alchemy\\alchemy.csproj": {}
   },
   "projects": {
-    "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/alchemy.csproj": {
+    "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\alchemy\\alchemy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/alchemy.csproj",
+        "projectUniqueName": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\alchemy\\alchemy.csproj",
         "projectName": "alchemy",
-        "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/alchemy.csproj",
-        "packagesPath": "/home/leenely/.nuget/packages/",
-        "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/alchemy/obj/",
+        "projectPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\alchemy\\alchemy.csproj",
+        "packagesPath": "C:\\Users\\leenely\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\alchemy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/leenely/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\leenely\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -53,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

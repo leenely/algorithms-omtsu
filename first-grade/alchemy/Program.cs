@@ -1,44 +1,28 @@
 ﻿string line = @" "; // <- Строка, с которой необходимо работать
 
-List<string> operations = new List<string>();
-
-string Wrapper(string resString, int numberOperation)
-{
-    return resString + operations[numberOperation - 1];
-}
-
+List<string> operations = [];
 string[] lineArrayForm = line.Split('\n');
 
-for (int i = 0; i < lineArrayForm.Length; i++)
+foreach(string currLine in lineArrayForm)
 {
-    string[] parts = lineArrayForm[i].Split(' ');
-
-    List<string> cleanedParts = new List<string>();
-
-    for (int k = 0; k < parts.Length; k++)
-    {
-        if (!string.IsNullOrWhiteSpace(parts[k]))
-        {
-            cleanedParts.Add(parts[k]);
-        }
-    }
-
-    string type = cleanedParts[0];
+	string[] currentLine = currLine.Split(' ');
+	string type = currentLine[0];
     string code = type == "DUST" ? "DT" : type == "WATER" ? "WT" : type == "FIRE" ? "FR" : "MX";
     string endCode = type == "DUST" ? "TD" : type == "WATER" ? "TW" : type == "FIRE" ? "RF" : "XM";
     string resString = code;
 
-    for (int j = 1; j < cleanedParts.Count; j++)
+
+	for (int j = 1; j < currentLine.Length; j++)
     {
-        if (int.TryParse(cleanedParts[j], out int number))
-        {
-            resString = Wrapper(resString, number);
-        }
-        else
-        {
-            resString += cleanedParts[j];
-        }
+    if (int.TryParse(currentLine[j], out int number) && number - 1 >= 0 && number - 1 < operations.Count)
+    {
+        resString += operations[number - 1].Trim();
     }
+    else
+    {
+        resString += currentLine[j].Trim();
+    }
+}
 
     resString += endCode;
     operations.Add(resString);

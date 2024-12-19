@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("alchemy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b418052dd9be274a5d48fecc62e7f3180024617e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5884f9f4d4c8e41f08e587d6776707bf466b16a")]
 [assembly: System.Reflection.AssemblyProductAttribute("alchemy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("alchemy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
