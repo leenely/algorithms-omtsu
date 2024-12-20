@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\villager\\villager.csproj",
+      "projectUniqueName": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\rgr\\Крестьянин и чёрт\\villager.csproj",
       "projectName": "villager",
-      "projectPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\villager\\villager.csproj",
+      "projectPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\rgr\\Крестьянин и чёрт\\villager.csproj",
       "packagesPath": "C:\\Users\\leenely\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\villager\\obj\\",
+      "outputPath": "C:\\Users\\leenely\\Code\\algorithms-omtsu\\first-grade\\rgr\\Крестьянин и чёрт\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leenely\\AppData\\Roaming\\NuGet\\NuGet.Config"

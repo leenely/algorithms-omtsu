@@ -1,14 +1,15 @@
-long maxN = long.Parse(Console.ReadLine());
+﻿long maxN = long.Parse(Console.ReadLine());
 long count = 0;
 
 for (int z = 1; ; z++)
 {
     long pow = (long)Math.Pow(2, z);
+    long div = pow - 1;
 
-    if (pow <= maxN)
+    if (div <= maxN)
     {
-        long maxK = (maxN * pow) / (pow - 1);
-        count += maxK; 
+        long temp = maxN / div;
+        count += temp; 
     }
     else
     {

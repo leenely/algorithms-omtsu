@@ -28,3 +28,18 @@ C:\Users\leenely\Code\algorithms-omtsu\first-grade\villager\obj\Debug\net8.0\ref
 C:\Users\leenely\Code\algorithms-omtsu\first-grade\villager\obj\Debug\net8.0\villager.pdb
 C:\Users\leenely\Code\algorithms-omtsu\first-grade\villager\obj\Debug\net8.0\villager.genruntimeconfig.cache
 C:\Users\leenely\Code\algorithms-omtsu\first-grade\villager\obj\Debug\net8.0\ref\villager.dll
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\bin\Debug\net8.0\villager.exe
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\bin\Debug\net8.0\villager.deps.json
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\bin\Debug\net8.0\villager.runtimeconfig.json
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\bin\Debug\net8.0\villager.dll
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\bin\Debug\net8.0\villager.pdb
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.AssemblyInfoInputs.cache
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.AssemblyInfo.cs
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.csproj.CoreCompileInputs.cache
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.sourcelink.json
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.dll
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\refint\villager.dll
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.pdb
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\villager.genruntimeconfig.cache
+C:\Users\leenely\Code\algorithms-omtsu\first-grade\rgr\Крестьянин и чёрт\obj\Debug\net8.0\ref\villager.dll
