@@ -1,0 +1,15 @@
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/bin/Debug/net8.0/Furniture
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/bin/Debug/net8.0/Furniture.deps.json
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/bin/Debug/net8.0/Furniture.runtimeconfig.json
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/bin/Debug/net8.0/Furniture.dll
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/bin/Debug/net8.0/Furniture.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.AssemblyInfoInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.AssemblyInfo.cs
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.csproj.CoreCompileInputs.cache
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.sourcelink.json
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.dll
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/refint/Furniture.dll
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.pdb
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/Furniture.genruntimeconfig.cache
+/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/Debug/net8.0/ref/Furniture.dll
