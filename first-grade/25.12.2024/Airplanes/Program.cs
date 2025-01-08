@@ -21,7 +21,7 @@ namespace AirplanesTask
 		{
 			return [departureCity, arrivalCity];
 		}
-		
+
 		public void printFlight()
 		{
 			Console.WriteLine($"Город отправления: {departureCity}, город прибытия: {arrivalCity}, время в пути: {timeInFlight}, название: {name}");
@@ -52,7 +52,7 @@ namespace AirplanesTask
 				Console.WriteLine($"Город отправления: {flight.arrivalCity}, город прибытия: {flight.departureCity}, время в пути: {flight.timeInFlight}, название: {flight.name}");
 			}
 		}
-		
+
 		public List<Flight> getFlightsByRequestedParam(string value, string param)
 		{
 			List<Flight> neededFlights = new List<Flight>();
@@ -94,8 +94,8 @@ namespace AirplanesTask
 			Console.Write("Для того, чтобы вернуться обратно нажмите любую клавишу...");
 			Console.ReadLine();
 		}
-		
-		void GetFlightsByRequest(string request) 
+
+		void GetFlightsByRequest(string request)
 		{
 			switch (request)
 			{
@@ -108,7 +108,7 @@ namespace AirplanesTask
 			}
 			string operation = Console.ReadLine();
 			List<Flight> FlightsByRequestedParam = new List<Flight>();
-			
+
 			foreach (CityAirport airport in airportsList)
 			{
 				FlightsByRequestedParam.AddRange(airport.getFlightsByRequestedParam(operation, request));
@@ -123,55 +123,55 @@ namespace AirplanesTask
 		}
 
 		void FlightManager(Flight flight)
-{
-    if (flight.departureCity == flight.arrivalCity)
-    {
-        // Добавляем рейс только один раз в список аэропорта
-        string city = flight.departureCity;
-        CityAirport tempAirport = null;
+		{
+			if (flight.departureCity == flight.arrivalCity)
+			{
+				// Добавляем рейс только один раз в список аэропорта
+				string city = flight.departureCity;
+				CityAirport tempAirport = null;
 
-        foreach (CityAirport airport in airportsList)
-        {
-            if (airport.city == city)
-            {
-                tempAirport = airport;
-                break;
-            }
-        }
+				foreach (CityAirport airport in airportsList)
+				{
+					if (airport.city == city)
+					{
+						tempAirport = airport;
+						break;
+					}
+				}
 
-        if (tempAirport == null)
-        {
-            tempAirport = new CityAirport(city);
-            airportsList.Add(tempAirport);
-        }
+				if (tempAirport == null)
+				{
+					tempAirport = new CityAirport(city);
+					airportsList.Add(tempAirport);
+				}
 
-        tempAirport.addFlight(flight);
-    }
-    else
-    {
-        foreach (string city in flight.getBothCities())
-        {
-            CityAirport tempAirport = null;
+				tempAirport.addFlight(flight);
+			}
+			else
+			{
+				foreach (string city in flight.getBothCities())
+				{
+					CityAirport tempAirport = null;
 
-            foreach (CityAirport airport in airportsList)
-            {
-                if (airport.city == city)
-                {
-                    tempAirport = airport;
-                    break;
-                }
-            }
+					foreach (CityAirport airport in airportsList)
+					{
+						if (airport.city == city)
+						{
+							tempAirport = airport;
+							break;
+						}
+					}
 
-            if (tempAirport == null)
-            {
-                tempAirport = new CityAirport(city);
-                airportsList.Add(tempAirport);
-            }
+					if (tempAirport == null)
+					{
+						tempAirport = new CityAirport(city);
+						airportsList.Add(tempAirport);
+					}
 
-            tempAirport.addFlight(flight);
-        }
-    }
-}
+					tempAirport.addFlight(flight);
+				}
+			}
+		}
 
 		public void FlightCreationProcess()
 		{
@@ -253,7 +253,7 @@ namespace AirplanesTask
 
 			while (isContinue)
 			{
-				string operation = UseMenuWriter("-- Второе меню --\n\nВыбор операции:\n- Вывести все рейсы (1)\n- Вывести рейсы с одним городом назначения (2)\n- Вывести рейсы с одним типом (3)\n- Выход из программы (q) ");
+				string operation = UseMenuWriter("-- Второе меню --\n\nВыбор операции:\n- Вывести все рейсы (1)\n- Вывести рейсы с одним городом назначения (2)\n- Вывести рейсы с одним типом (3)\n- Выход в главное меню (q) ");
 
 				switch (operation)
 				{
@@ -276,7 +276,7 @@ namespace AirplanesTask
 			}
 		}
 	}
-	
+
 	class Program
 	{
 		static void Main(string[] args)

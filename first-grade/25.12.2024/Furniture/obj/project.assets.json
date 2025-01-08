@@ -8,24 +8,31 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/leenely/.nuget/packages/": {}
+    "C:\\Users\\xflex\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/Furniture.csproj",
+      "projectUniqueName": "C:\\Users\\xflex\\code\\algorithms-omtsu\\first-grade\\25.12.2024\\Furniture\\Furniture.csproj",
       "projectName": "Furniture",
-      "projectPath": "/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/Furniture.csproj",
-      "packagesPath": "/home/leenely/.nuget/packages/",
-      "outputPath": "/home/leenely/code/algorithms-omtsu/first-grade/25.12.24/Furniture/obj/",
+      "projectPath": "C:\\Users\\xflex\\code\\algorithms-omtsu\\first-grade\\25.12.2024\\Furniture\\Furniture.csproj",
+      "packagesPath": "C:\\Users\\xflex\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xflex\\code\\algorithms-omtsu\\first-grade\\25.12.2024\\Furniture\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/leenely/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\xflex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -38,7 +45,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -59,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
