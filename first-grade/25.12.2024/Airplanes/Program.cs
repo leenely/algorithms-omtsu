@@ -81,7 +81,6 @@ namespace AirplanesTask
 
 	class RenderMenu
 	{
-		bool debug = true;
 		List<CityAirport> airportsList = new List<CityAirport>();
 
 		void GetAllFlights()
@@ -190,16 +189,6 @@ namespace AirplanesTask
 				string name = Console.ReadLine();
 
 				FlightManager(new Flight(departureCity, arrivalCity, distance, name));
-
-				if (debug)
-				{
-					Console.WriteLine("------------------------\n");
-					foreach (CityAirport airport in airportsList)
-					{
-						airport.printAirplanes();
-					}
-					Console.WriteLine("\n------------------------");
-				}
 				Console.WriteLine("Продолжить создание рейсов? (y/n)");
 				string answer = Console.ReadLine();
 				if (answer != "y")
