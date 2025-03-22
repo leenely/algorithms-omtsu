@@ -309,10 +309,6 @@ namespace MenuApp
         static void Main(string[] args)
         {
             Logic logicUnit = new Logic();
-
-            logicUnit.FastAddUser(["user1", "1000", "userOperator", "userCity", "1900"]);
-            logicUnit.FastAddUser(["user2", "1025", "userOperator", "userCity1", "1901"]);
-
             Menu menu = new Menu(logicUnit);
             menu.Run();
         }
