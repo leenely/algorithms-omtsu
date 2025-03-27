@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leenely/code/algorithms-omtsu/second-grade/13.02.2025/13.02.2025.csproj": {}
+    "/home/leenely/code/algorithms-omtsu/second-grade/24.03.2025/24.03.2025.csproj": {}
   },
   "projects": {
-    "/home/leenely/code/algorithms-omtsu/second-grade/13.02.2025/13.02.2025.csproj": {
+    "/home/leenely/code/algorithms-omtsu/second-grade/24.03.2025/24.03.2025.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/second-grade/13.02.2025/13.02.2025.csproj",
-        "projectName": "13.02.2025",
-        "projectPath": "/home/leenely/code/algorithms-omtsu/second-grade/13.02.2025/13.02.2025.csproj",
+        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/second-grade/24.03.2025/24.03.2025.csproj",
+        "projectName": "24.03.2025",
+        "projectPath": "/home/leenely/code/algorithms-omtsu/second-grade/24.03.2025/24.03.2025.csproj",
         "packagesPath": "/home/leenely/.nuget/packages/",
-        "outputPath": "/home/leenely/code/algorithms-omtsu/second-grade/13.02.2025/obj/",
+        "outputPath": "/home/leenely/code/algorithms-omtsu/second-grade/24.03.2025/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leenely/.nuget/NuGet/NuGet.Config"

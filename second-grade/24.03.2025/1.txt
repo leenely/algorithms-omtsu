@@ -1,0 +1,146 @@
+using System;
+
+namespace PointMovement
+{
+    // Класс "Точка" с координатами x и y
+    public class Point
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public override string ToString()
+        {
+            return $"({X}, {Y})";
+        }
+    }
+
+    // Класс для представления события выхода точки за пределы поля
+    public class PointOutOfBoundsEventArgs : EventArgs
+    {
+        public Point OutOfBoundsPoint { get; private set; }
+
+        public PointOutOfBoundsEventArgs(Point point)
+        {
+            OutOfBoundsPoint = point;
+        }
+    }
+
+    // Пользовательский делегат для обработки события
+    public delegate void PointOutOfBoundsHandler(object sender, PointOutOfBoundsEventArgs e);
+
+    // Класс для работы с игровым полем и движением точки
+    public class GameField
+    {
+        private Point topLeft;       // Верхний левый угол
+        private Point topRight;      // Верхний правый угол
+        private Point bottomLeft;    // Нижний левый угол
+        private Point bottomRight;   // Нижний правый угол
+        private Point currentPoint;  // Текущая точка
+
+        private int minX, maxX, minY, maxY; // Границы прямоугольника
+
+        // Событие выхода точки за пределы поля
+        public event PointOutOfBoundsHandler OnPointOutOfBounds;
+
+        private Random random = new Random();
+
+        // Конструктор игрового поля
+        public GameField(Point topLeft, Point topRight, Point bottomLeft, Point bottomRight, Point startPoint)
+        {
+            this.topLeft = topLeft;
+            this.topRight = topRight;
+            this.bottomLeft = bottomLeft;
+            this.bottomRight = bottomRight;
+
+            // Определяем границы прямоугольника
+            minX = Math.Min(topLeft.X, Math.Min(topRight.X, Math.Min(bottomLeft.X, bottomRight.X)));
+            maxX = Math.Max(topLeft.X, Math.Max(topRight.X, Math.Max(bottomLeft.X, bottomRight.X)));
+            minY = Math.Min(topLeft.Y, Math.Min(topRight.Y, Math.Min(bottomLeft.Y, bottomRight.Y)));
+            maxY = Math.Max(topLeft.Y, Math.Max(topRight.Y, Math.Max(bottomLeft.Y, bottomRight.Y)));
+
+            if (!IsPointInside(startPoint))
+            {
+                throw new ArgumentException("Начальная точка должна находиться внутри игрового поля.");
+            }
+
+            currentPoint = startPoint;
+        }
+
+        // Проверка, находится ли точка внутри прямоугольника
+        private bool IsPointInside(Point point)
+        {
+            return point.X >= minX && point.X <= maxX &&
+                   point.Y >= minY && point.Y <= maxY;
+        }
+
+        // Метод для случайного перемещения точки
+        public void MovePoint()
+        {
+            int newX = currentPoint.X + random.Next(-1, 2); // Изменение X на -1, 0 или 1
+            int newY = currentPoint.Y + random.Next(-1, 2); // Изменение Y на -1, 0 или 1
+
+            Point newPoint = new Point(newX, newY);
+
+            if (!IsPointInside(newPoint))
+            {
+                // Если точка выходит за пределы поля, вызываем событие через метод
+                NotifyPointOutOfBounds(newPoint);
+            }
+            else
+            {
+                // Если точка остается внутри поля, обновляем текущую точку
+                currentPoint = newPoint;
+            }
+
+            Console.WriteLine($"Текущая позиция: {currentPoint}");
+        }
+
+        // Метод для вызова события
+        private void NotifyPointOutOfBounds(Point outOfBoundsPoint)
+        {
+            // Проверяем, есть ли подписчики на событие
+            if (OnPointOutOfBounds != null)
+            {
+                OnPointOutOfBounds(this, new PointOutOfBoundsEventArgs(outOfBoundsPoint));
+            }
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Определение границ игрового поля (четыре угловые точки)
+            Point topLeft = new Point(0, 0);     // Верхний левый угол
+            Point topRight = new Point(5, 0);    // Верхний правый угол
+            Point bottomLeft = new Point(0, 5);  // Нижний левый угол
+            Point bottomRight = new Point(5, 5); // Нижний правый угол
+
+            // Начальная точка внутри поля
+            Point startPoint = new Point(3, 3);
+
+            // Создание объекта игрового поля
+            GameField gameField = new GameField(topLeft, topRight, bottomLeft, bottomRight, startPoint);
+
+            // Подписка на событие выхода за пределы поля
+            gameField.OnPointOutOfBounds += (sender, e) =>
+            {
+                Console.WriteLine($"Точка {e.OutOfBoundsPoint} вышла за пределы игрового поля!");
+            };
+
+            // Выполнение 20 шагов движения точки
+            for (int i = 0; i < 20; i++)
+            {
+                Console.WriteLine($"Шаг {i + 1}:");
+                gameField.MovePoint();
+                Console.WriteLine();
+            }
+        }
+    }
+}
