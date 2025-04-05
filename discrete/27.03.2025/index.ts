@@ -3,7 +3,7 @@ function mazeDraw(maze) {
   for (let i = 0; i < maze.length; i++) {
     for (let j = 0; j < maze[i].length; j++) {
       if (maze[i][j] == Infinity) {
-        string += '□ '
+        string += ' -- '
       } else {
         string += `${maze[i][j]} `
       }
