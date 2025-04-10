@@ -14,22 +14,20 @@ foreach (char c in line)
 	}
 	else if (c == ')' || c == ']' || c == '}')
 	{
-		if (stack.Count == 0) 
+		if (stack.Count == 0)
 		{
-			Console.WriteLine("Стэк пуст");
-			return;
+			throw new ArgumentException("Скобки расставлены неправильно");
 		}
 
 		char nowSymbol = stack.Pop();
 		if ((nowSymbol == '(' && c != ')') || (nowSymbol == '[' && c != ']') || (nowSymbol == '{' && c != '}'))
 		{
-			Console.WriteLine("Скобки расставлены неправильно");
-			return;
+			throw new ArgumentException("Скобки расставлены неправильно");
 		}
 	}
 }
 
-if (stack.Count != 0) 
+if (stack.Count != 0)
 {
 	Console.WriteLine("Скобки расставлены неправильно");
 }

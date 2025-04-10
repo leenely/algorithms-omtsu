@@ -70,65 +70,85 @@
 //   }
 // }
 
-
 using System;
+using System.Collections.Generic;
 
 public class Car
 {
-	public string year;
-	public string name;
-	public string owner;
-	public bool isClean;
+	public string Year { get; set; }
+	public string Name { get; set; }
+	public string Owner { get; set; }
+	public bool IsClean { get; set; }
 
 	public Car(string year, string name, string owner, bool isClean)
 	{
-		this.year = year;
-		this.name = name;
-		this.owner = owner;
-		this.isClean = isClean;
+		Year = year;
+		Name = name;
+		Owner = owner;
+		IsClean = isClean;
 	}
 }
 
-
 public class Garage
 {
-	List<Car> cars = new List<Car>();
+	private List<Car> cars = new List<Car>();
 
 	public void AddCar(Car car)
 	{
 		cars.Add(car);
 	}
+
+	public bool ContainsCar(Car car)
+	{
+		return cars.Contains(car);
+	}
 }
 
-public delegate void WashingEventHandler();
+public delegate void WashingEventHandler(Car car);
 
 public class CarWash
 {
 	public event WashingEventHandler OnWash;
 
-	public void OnWashing(Car car)
+	public void WashCar(Car car)
 	{
-		if (!car.isClean)
+		if (car.IsClean)
 		{
-			car.isClean = true;
-			Console.WriteLine($"Машина {car.name} успешно помыта");
+			Console.WriteLine($"Машина {car.Name} уже чиста");
+			return;
 		}
-		else
-		{
-			Console.WriteLine($"Машина {car.name} уже чиста");
-		}
+
+		car.IsClean = true;
+		Console.WriteLine($"Машина {car.Name} успешно помыта");
+
+		OnWash?.Invoke(car);
 	}
 }
 
 class Program
 {
-	public void Main()
+	static void Main()
 	{
 		Garage garage = new Garage();
 		CarWash carWash = new CarWash();
 
-		garage.AddCar(new Car(2020, "Toyota", "Geniy", false));
+		Car car = new Car("2020", "Toyota", "Geniy", false);
+		garage.AddCar(car);
 
-		carWash.WashingEvent += CarWash_WashingEvent;
+		carWash.OnWash += CarWash_WashingEvent;
+
+		if (garage.ContainsCar(car))
+		{
+			carWash.WashCar(car);
+		}
+		else
+		{
+			Console.WriteLine("Машина не найдена в гараже");
+		}
+	}
+
+	static void CarWash_WashingEvent(Car car)
+	{
+		Console.WriteLine($"Событие мытья машины: {car.Name}");
 	}
 }
