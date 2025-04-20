@@ -1,0 +1,14 @@
+/home/leenely/Desktop/rgr/balls/bin/Debug/net9.0/balls
+/home/leenely/Desktop/rgr/balls/bin/Debug/net9.0/balls.deps.json
+/home/leenely/Desktop/rgr/balls/bin/Debug/net9.0/balls.runtimeconfig.json
+/home/leenely/Desktop/rgr/balls/bin/Debug/net9.0/balls.dll
+/home/leenely/Desktop/rgr/balls/bin/Debug/net9.0/balls.pdb
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.AssemblyInfoInputs.cache
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.AssemblyInfo.cs
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.csproj.CoreCompileInputs.cache
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.dll
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/refint/balls.dll
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.pdb
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/balls.genruntimeconfig.cache
+/home/leenely/Desktop/rgr/balls/obj/Debug/net9.0/ref/balls.dll

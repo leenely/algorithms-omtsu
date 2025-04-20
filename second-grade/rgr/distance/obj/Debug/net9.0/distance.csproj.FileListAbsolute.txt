@@ -1,0 +1,14 @@
+/home/leenely/Desktop/rgr/distance/bin/Debug/net9.0/distance
+/home/leenely/Desktop/rgr/distance/bin/Debug/net9.0/distance.deps.json
+/home/leenely/Desktop/rgr/distance/bin/Debug/net9.0/distance.runtimeconfig.json
+/home/leenely/Desktop/rgr/distance/bin/Debug/net9.0/distance.dll
+/home/leenely/Desktop/rgr/distance/bin/Debug/net9.0/distance.pdb
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.AssemblyInfoInputs.cache
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.AssemblyInfo.cs
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.csproj.CoreCompileInputs.cache
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.dll
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/refint/distance.dll
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.pdb
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/distance.genruntimeconfig.cache
+/home/leenely/Desktop/rgr/distance/obj/Debug/net9.0/ref/distance.dll

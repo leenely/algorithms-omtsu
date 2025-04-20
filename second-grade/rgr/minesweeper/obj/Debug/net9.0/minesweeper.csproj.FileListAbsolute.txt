@@ -1,0 +1,14 @@
+/home/leenely/Desktop/rgr/minesweeper/bin/Debug/net9.0/minesweeper
+/home/leenely/Desktop/rgr/minesweeper/bin/Debug/net9.0/minesweeper.deps.json
+/home/leenely/Desktop/rgr/minesweeper/bin/Debug/net9.0/minesweeper.runtimeconfig.json
+/home/leenely/Desktop/rgr/minesweeper/bin/Debug/net9.0/minesweeper.dll
+/home/leenely/Desktop/rgr/minesweeper/bin/Debug/net9.0/minesweeper.pdb
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.AssemblyInfoInputs.cache
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.AssemblyInfo.cs
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.csproj.CoreCompileInputs.cache
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.dll
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/refint/minesweeper.dll
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.pdb
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/minesweeper.genruntimeconfig.cache
+/home/leenely/Desktop/rgr/minesweeper/obj/Debug/net9.0/ref/minesweeper.dll
