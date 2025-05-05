@@ -1,0 +1,15 @@
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/bin/Debug/net9.0/05.05.2025
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/bin/Debug/net9.0/05.05.2025.deps.json
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/bin/Debug/net9.0/05.05.2025.runtimeconfig.json
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/bin/Debug/net9.0/05.05.2025.dll
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/bin/Debug/net9.0/05.05.2025.pdb
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.GeneratedMSBuildEditorConfig.editorconfig
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.AssemblyInfoInputs.cache
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.AssemblyInfo.cs
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.csproj.CoreCompileInputs.cache
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.sourcelink.json
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.dll
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/refint/05.05.2025.dll
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.pdb
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/05.05.2025.genruntimeconfig.cache
+/home/ubuntu/code/algorithms-omtsu/second-grade/05.05.2025/obj/Debug/net9.0/ref/05.05.2025.dll
