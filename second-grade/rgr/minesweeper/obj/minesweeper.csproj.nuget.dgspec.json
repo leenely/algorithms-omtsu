@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leenely/Desktop/rgr/minesweeper/minesweeper.csproj": {}
+    "/home/leenely/code/algorithms-omtsu/second-grade/rgr/minesweeper/minesweeper.csproj": {}
   },
   "projects": {
-    "/home/leenely/Desktop/rgr/minesweeper/minesweeper.csproj": {
+    "/home/leenely/code/algorithms-omtsu/second-grade/rgr/minesweeper/minesweeper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leenely/Desktop/rgr/minesweeper/minesweeper.csproj",
+        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/minesweeper/minesweeper.csproj",
         "projectName": "minesweeper",
-        "projectPath": "/home/leenely/Desktop/rgr/minesweeper/minesweeper.csproj",
+        "projectPath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/minesweeper/minesweeper.csproj",
         "packagesPath": "/home/leenely/.nuget/packages/",
-        "outputPath": "/home/leenely/Desktop/rgr/minesweeper/obj/",
+        "outputPath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/minesweeper/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leenely/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leenely/Desktop/rgr/balls/balls.csproj": {}
+    "/home/leenely/code/algorithms-omtsu/second-grade/rgr/balls/balls.csproj": {}
   },
   "projects": {
-    "/home/leenely/Desktop/rgr/balls/balls.csproj": {
+    "/home/leenely/code/algorithms-omtsu/second-grade/rgr/balls/balls.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leenely/Desktop/rgr/balls/balls.csproj",
+        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/balls/balls.csproj",
         "projectName": "balls",
-        "projectPath": "/home/leenely/Desktop/rgr/balls/balls.csproj",
+        "projectPath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/balls/balls.csproj",
         "packagesPath": "/home/leenely/.nuget/packages/",
-        "outputPath": "/home/leenely/Desktop/rgr/balls/obj/",
+        "outputPath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/balls/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leenely/.nuget/NuGet/NuGet.Config"

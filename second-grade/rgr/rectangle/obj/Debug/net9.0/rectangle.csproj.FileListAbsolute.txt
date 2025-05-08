@@ -1,0 +1,15 @@
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/bin/Debug/net9.0/rectangle
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/bin/Debug/net9.0/rectangle.deps.json
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/bin/Debug/net9.0/rectangle.runtimeconfig.json
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/bin/Debug/net9.0/rectangle.dll
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/bin/Debug/net9.0/rectangle.pdb
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.AssemblyInfoInputs.cache
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.AssemblyInfo.cs
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.csproj.CoreCompileInputs.cache
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.sourcelink.json
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.dll
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/refint/rectangle.dll
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.pdb
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/rectangle.genruntimeconfig.cache
+/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/obj/Debug/net9.0/ref/rectangle.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/leenely/Desktop/rgr/distance/distance.csproj": {}
+    "/home/leenely/code/algorithms-omtsu/second-grade/rgr/distance/distance.csproj": {}
   },
   "projects": {
-    "/home/leenely/Desktop/rgr/distance/distance.csproj": {
+    "/home/leenely/code/algorithms-omtsu/second-grade/rgr/distance/distance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/leenely/Desktop/rgr/distance/distance.csproj",
+        "projectUniqueName": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/distance/distance.csproj",
         "projectName": "distance",
-        "projectPath": "/home/leenely/Desktop/rgr/distance/distance.csproj",
+        "projectPath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/distance/distance.csproj",
         "packagesPath": "/home/leenely/.nuget/packages/",
-        "outputPath": "/home/leenely/Desktop/rgr/distance/obj/",
+        "outputPath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/distance/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/leenely/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gK359/3Q/ng=",
+  "success": true,
+  "projectFilePath": "/home/leenely/code/algorithms-omtsu/second-grade/rgr/rectangle/rectangle.csproj",
+  "expectedPackageFiles": [
+    "/home/leenely/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

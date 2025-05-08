@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("balls")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1433747d64c215269768f2f5916f878412135e77")]
 [assembly: System.Reflection.AssemblyProductAttribute("balls")]
 [assembly: System.Reflection.AssemblyTitleAttribute("balls")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
