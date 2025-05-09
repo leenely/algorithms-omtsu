@@ -82,24 +82,27 @@ function findCompany(n, connections, start, end) {
 }
 
 // Тестовые данные
-// const N = 3;
-// const connections: [number, number, number, number, number][] = [
-//     [1, 2, 5, 3, 8],
-//     [2, 3, 4, 6, 2],
-//     [1, 3, 7, 1, 9]
-// ];
-// const startStation = 1;
-// const endStation = 3;
-
-const N = 5
+const N = 6;
 const connections: [number, number, number, number, number][] = [
-  [1, 2, 10, 15, 20],
-  [2, 3, 5, 10, 15],
-  [1, 3, 20, 10, 5],
-  [3, 4, 10, 15, 20],
-  [2, 4, 30, 25, 20],
-]
-const startStation = 1
-const endStation = 4
+    [1, 2, 8, 12, 15],
+    [2, 3, 10, 5, 7],
+    [1, 3, 20, 8, 10],
+    [3, 4, 15, 10, 12],
+    [2, 4, 25, 20, 18],
+    [4, 5, 5, 8, 10]
+];
+const startStation = 1;
+const endStation = 5;
+
+// const N = 5
+// const connections: [number, number, number, number, number][] = [
+//   [1, 2, 10, 15, 20],
+//   [2, 3, 5, 10, 15],
+//   [1, 3, 20, 10, 5],
+//   [3, 4, 10, 15, 20],
+//   [2, 4, 30, 25, 20],
+// ]
+// const startStation = 1
+// const endStation = 4
 
 findCompany(N, connections, startStation, endStation)
