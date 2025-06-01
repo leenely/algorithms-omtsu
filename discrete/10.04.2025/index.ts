@@ -1,110 +1,134 @@
-function workWithMatrix(matrix, cost) {
-  let minSum = 0
-  const rows = matrix.length
-  const columns = matrix[0].length
+function workWithMatrix(matrix: number[][]) {
+    const n = matrix.length;
+    let cost = 0;
+    const newMatrix = matrix.map(row => [...row]);
 
-  const workWithRows = matrix.map(row => {
-    const minValue =
-      Math.min(...row.filter(item => item !== Infinity)) ?? Infinity
-    if (minValue < Infinity && minValue > 0) {
-      minSum += minValue
-      console.log("Строка:", minValue)
-      return row.map(item => (item !== Infinity ? item - minValue : Infinity))
-    }
+    for (let i = 0; i < n; i++) {
+        const finiteValues = newMatrix[i].filter(v => isFinite(v));
+        if (finiteValues.length === 0) continue;
 
-    return row
-  })
-
-  const workWithColumns = workWithRows.map(row =>
-    row.map((item, index) => {
-      const column = workWithRows.map(row => row[index])
-      console.log(column)
-      const minValue = Math.min(...column.filter(item => item !== Infinity))
-
-      if (minValue < Infinity && minValue > 0) {
-        minSum += minValue
-        return item !== Infinity ? item - minValue : Infinity
-      }
-
-      return item
-    })
-  )
-
-  console.log(minSum)
-  console.table(workWithColumns)
-  return { newMatrix: workWithColumns, newCost: cost + minSum }
-}
-
-function findEdgeWithMaxZero(matrix) {
-  const rows = matrix.length
-  const columns = matrix[0].length
-
-  let edge = { i: 0, j: 0, cost: -1 }
-
-  for (let i = 0; i < rows; i++) {
-    for (let j = 0; j < columns; j++) {
-      if (matrix[i][j] === 0) {
-        const rowCost = Math.min(
-          ...matrix[i].filter((_, colIndex) => colIndex !== j)
-        )
-        const columnCost = Math.min(
-          ...matrix.map(row => row[j]).filter((_, rowIndex) => rowIndex !== i)
-        )
-
-        const crossCost = rowCost + columnCost
-        console.log(`Текущий 0: (${i}, ${j}) - ${crossCost}`)
-        if (crossCost > edge.cost) {
-          edge = { i, j, cost: crossCost }
+        const minRow = Math.min(...finiteValues);
+        if (minRow > 0) {
+            for (let j = 0; j < n; j++) {
+                if (isFinite(newMatrix[i][j])) {
+                    newMatrix[i][j] -= minRow;
+                }
+            }
+            cost += minRow;
         }
-      }
     }
-  }
-  return edge
+
+    for (let j = 0; j < n; j++) {
+        let minCol = Infinity;
+        for (let i = 0; i < n; i++) {
+            if (isFinite(newMatrix[i][j]) && newMatrix[i][j] < minCol) {
+                minCol = newMatrix[i][j];
+            }
+        }
+        if (!isFinite(minCol) || minCol === 0) continue;
+
+        for (let i = 0; i < n; i++) {
+            if (isFinite(newMatrix[i][j])) {
+                newMatrix[i][j] -= minCol;
+            }
+        }
+        cost += minCol;
+    }
+    return [newMatrix, cost];
 }
 
-function little(matrix, path: number[], cost) {
-  const n = matrix.length
+function findZeroPenalty(matrix: number[][]) {
+    const n = matrix.length;
+    let maxPenalty = -Infinity;
+    let x = -1, y = -1;
 
-  if (path.length === n - 1) {
-    const start = path[0]
-    const end = path[path.length - 1]
-    if (matrix[end][start] !== Infinity) {
-      return { path, cost: cost + matrix[end][start] }
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            if (matrix[i][j] === 0) {
+                let rowMin = Infinity;
+                for (let k = 0; k < n; k++) {
+                    if (k !== j && isFinite(matrix[i][k])) {
+                        rowMin = Math.min(rowMin, matrix[i][k]);
+                    }
+                }
+
+                let colMin = Infinity;
+                for (let k = 0; k < n; k++) {
+                    if (k !== i && isFinite(matrix[k][j])) {
+                        colMin = Math.min(colMin, matrix[k][j]);
+                    }
+                }
+
+                const penalty = (isFinite(rowMin) ? rowMin : 0) + (isFinite(colMin) ? colMin : 0);
+                if (penalty > maxPenalty) {
+                    maxPenalty = penalty;
+                    x = i;
+                    y = j;
+                }
+            }
+        }
     }
-    return { path: [], cost: Infinity }
-  }
-
-  const { newMatrix, newCost } = workWithMatrix(matrix, cost)
-  const edge = findEdgeWithMaxZero(newMatrix)
-  console.log(`Выбранный 0: (${edge.i}, ${edge.j}) - ${edge.cost}`)
-
-  // Проверка на путь
-  if (edge.i === -1 || edge.j === -1) {
-    return path
-  }
-
-  const updatedMatrix = newMatrix.map(row =>
-    row.map((val, colIndex) => (colIndex === edge.j ? Infinity : val))
-  )
-
-  for (let i = 0; i < n; i++) {
-    updatedMatrix[i][edge.j] = Infinity
-    updatedMatrix[edge.i][i] = Infinity
-  }
-
-  console.log(`Стоимость: ${newCost}`)
-  return little(updatedMatrix, [...path, edge.j], newCost)
+    return [x, y, maxPenalty];
 }
 
-const matrix = [
-  [Infinity, 27, 43, 16, 30, 26],
-  [7, Infinity, 16, 1, 30, 25],
-  [20, 13, Infinity, 35, 5, 0],
-  [21, 16, 25, Infinity, 18, 18],
-  [12, 46, 27, 48, Infinity, 5],
-  [23, 5, 5, 9, 5, Infinity],
-]
+function littleTSP(matrix: number[][]): number {
+    const n = matrix.length;
+    let bestCost = Infinity;
 
-// console.table(little(matrix, [], 0))
+    const stack: { mat: number[][]; b: number; level: number }[] = [];
 
-console.table(workWithMatrix(matrix, 0))
+    const [initMatrix, initBound] = workWithMatrix(matrix);
+    stack.push({ mat: initMatrix, b: initBound, level: 0 });
+
+    while (stack.length > 0) {
+        const { mat, b, level } = stack.pop()!;
+
+        if (level === n - 1) {
+            bestCost = Math.min(bestCost, b);
+            continue;
+        }
+
+        const [i, j, penalty] = findZeroPenalty(mat);
+
+        if (i === -1 || j === -1) {
+            continue;
+        }
+
+        const includeMatrix = mat.map(row => [...row]);
+        const currentN = includeMatrix.length;
+        for (let k = 0; k < currentN; k++) {
+            includeMatrix[i][k] = Infinity;
+            includeMatrix[k][j] = Infinity;
+        }
+        includeMatrix[j][i] = Infinity;
+
+        const [reduced1, addedCost1] = workWithMatrix(includeMatrix);
+        const newBound1 = b + addedCost1;
+
+        if (newBound1 < bestCost) {
+            stack.push({ mat: reduced1, b: newBound1, level: level + 1 });
+        }
+    }
+    return bestCost;
+}
+
+
+const costMatrix = [
+    [Infinity, 27, 43, 16, 30, 26],
+    [7, Infinity, 16, 1, 30, 25],
+    [20, 13, Infinity, 35, 5, 0],
+    [21, 16, 25, Infinity, 18, 18],
+    [12, 46, 27, 48, Infinity, 5],
+    [23, 5, 5, 9, 5, Infinity]
+]; // -> 63
+
+console.log(littleTSP(costMatrix))
+
+const graph = [
+    [Infinity, 3, 5, 7],
+    [3, Infinity, 6, 4],
+    [5, 6, Infinity, 2],
+    [7, 4, 2, Infinity]
+];
+
+console.log(littleTSP(graph)); // -> 12
