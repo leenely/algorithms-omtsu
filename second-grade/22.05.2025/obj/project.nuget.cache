@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPn07nbCpvY=",
+  "dgSpecHash": "jaBJlwDI5fg=",
   "success": true,
   "projectFilePath": "/home/leenely/code/algorithms-omtsu/second-grade/22.05.2025/22.05.2025.csproj",
-  "expectedPackageFiles": [
-    "/home/leenely/.nuget/packages/microsoft.aspnetcore.app.ref/9.0.4/microsoft.aspnetcore.app.ref.9.0.4.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
