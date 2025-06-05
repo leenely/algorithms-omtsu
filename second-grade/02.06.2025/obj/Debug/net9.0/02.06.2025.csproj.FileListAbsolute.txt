@@ -1,0 +1,15 @@
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.GeneratedMSBuildEditorConfig.editorconfig
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.AssemblyInfoInputs.cache
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.AssemblyInfo.cs
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.csproj.CoreCompileInputs.cache
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.sourcelink.json
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/bin/Debug/net9.0/02.06.2025
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/bin/Debug/net9.0/02.06.2025.deps.json
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/bin/Debug/net9.0/02.06.2025.runtimeconfig.json
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/bin/Debug/net9.0/02.06.2025.dll
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/bin/Debug/net9.0/02.06.2025.pdb
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.dll
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/refint/02.06.2025.dll
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.pdb
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/02.06.2025.genruntimeconfig.cache
+/home/leenely/code/algorithms-omtsu/second-grade/02.06.2025/obj/Debug/net9.0/ref/02.06.2025.dll
